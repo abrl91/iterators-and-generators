@@ -1,4 +1,5 @@
 // example 5: Lazy Evaluation
+
 function* fibonacci() {
   let a = 0;
   let b = 1;
