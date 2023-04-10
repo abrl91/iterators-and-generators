@@ -1,1 +1,1 @@
-# iterators-and-generators
+# Iterators and Generators Playground
