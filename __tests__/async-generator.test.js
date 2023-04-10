@@ -1,11 +1,11 @@
 import { runAsync, asyncGenerator } from '../src/async-generator';
 
-describe('runAsync', () => {
+describe('async-generator', () => {
   afterEach(() => {
     jest.clearAllTimers();
   });
 
-  it('should call console.log with correct messages and at the right time', async () => {
+  test('runAsync should call console.log with correct messages and at the right time', async () => {
     const logMock = jest.fn();
     const generator = () => asyncGenerator(logMock);
 
