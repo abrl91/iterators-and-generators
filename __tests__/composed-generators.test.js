@@ -1,7 +1,7 @@
 import { generatorB } from '../src/composed-generators';
 
 describe('composed-generators', () => {
-  test('should produce the correct sequence of values', () => {
+  it('should produce the correct sequence of values', () => {
     const iterator = generatorB();
     expect(iterator.next()).toEqual({ value: 3, done: false });
     expect(iterator.next()).toEqual({ value: 1, done: false });
