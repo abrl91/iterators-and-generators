@@ -1,5 +1,3 @@
-// example 1: Generator Basics Revisited
-
 function* simpleGenerator() {
   yield 1;
   yield 2;

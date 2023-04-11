@@ -1,5 +1,3 @@
-// example 3: Generator Delegation with yield*
-
 function* generatorA() {
   yield 1;
   yield 2;

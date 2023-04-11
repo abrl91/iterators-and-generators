@@ -1,5 +1,3 @@
-// example 6: Iterating Over Complex Data Structures
-
 class TreeNode {
   constructor(value, left = null, right = null) {
     this.value = value;

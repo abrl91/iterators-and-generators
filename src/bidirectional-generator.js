@@ -1,5 +1,3 @@
-// example 4: Bidirectional Communication
-
 function* bidirectionalGenerator() {
   const name = yield 'What is your name?';
   yield `Hello, ${name}!`;
