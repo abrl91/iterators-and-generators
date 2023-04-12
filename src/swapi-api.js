@@ -3,12 +3,12 @@ import fetch from 'node-fetch';
 const getSwapiPageGenerator = (entity) => {
   return async function* () {
     let nextPage = `https://swapi.dev/api/${entity}/`;
-    while (nextPage) {
+    do {
       const response = await fetch(nextPage);
       const data = await response.json();
       nextPage = data.next;
       yield data.results;
-    }
+    } while (nextPage);
   };
 };
 
