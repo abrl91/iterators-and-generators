@@ -1,5 +1,6 @@
 function* bidirectionalGenerator() {
-  const name = yield 'What is your name?';
+  const message = 'What is your name?';
+  const name = yield message;
   yield `Hello, ${name}!`;
 }
 

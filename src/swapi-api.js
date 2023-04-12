@@ -42,7 +42,6 @@ const swapi = {
   getStarships: () => swapiEntities.starships,
 };
 
-// log all swapi just for testing
 for (const entity of Object.keys(swapiEntities)) {
   for await (const page of swapiEntities[entity]) {
     console.log(page);
