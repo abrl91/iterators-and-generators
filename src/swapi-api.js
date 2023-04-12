@@ -7,7 +7,7 @@ const getSwapiPageGenerator = (entity) => {
       const response = await fetch(nextPage);
       const data = await response.json();
       nextPage = data.next;
-      yield data.results;
+      yield* data.results;
     } while (nextPage);
   };
 };
