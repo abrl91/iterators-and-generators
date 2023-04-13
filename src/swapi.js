@@ -48,4 +48,4 @@ for (const entity of Object.keys(swapiEntities)) {
   }
 }
 
-export default swapi;
+export { getSwapiPageGenerator, swapi };
