@@ -36,3 +36,5 @@ do {
 
 console.log('Generated Tic-tac-toe board:');
 console.log(board.map((row) => row.join(' ')).join('\n'));
+
+export { ticTacToeBoardGenerator };
